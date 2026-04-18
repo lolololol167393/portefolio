@@ -241,8 +241,8 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 }
 
 .skill-card {
-    background: #1a1a1a; /* Fond gris très foncé */
-    border: 1px solid #333; /* Bordure discrète */
+    background: #fff; /* Fond gris très foncé */
+    border: 1px solid var(--border); /* Bordure discrète */
     border-radius: 12px;
     padding: 20px;
     display: flex;
@@ -263,7 +263,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
 }
 
 .skill-info h3 {
-    color: #fff;
+    color: #1a1a1a;
     font-size: 16px;
     margin: 0;
 }
