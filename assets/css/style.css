@@ -209,7 +209,7 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     padding: 0 10%;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 
 /* Formulaire de contact */
@@ -252,6 +252,10 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     text-align: left;
 }
 
+.skill-card:has(.skill-logo) {
+    justify-content: space-between; 
+}
+
 .skill-card:hover {
     border-color: #10b981; /* La couleur verte de ton point "dot" au survol */
     transform: translateY(-2px);
@@ -263,9 +267,17 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     align-items: center;
 }
 
+.skill-image img {
+    width: 50px; /* Taille ajustable selon tes besoins */
+    height: 50px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
 .skill-info h3 {
     color: #1a1a1a;
     font-size: 16px;
+    font-weight: 700;
     margin: 0;
 }
 
@@ -273,4 +285,9 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     color: #9ca3af;
     font-size: 13px;
     margin: 4px 0 0 0;
+}
+
+.skills .skills-grid {
+    margin: 20px 0; 
+    gap: 15px;
 }
