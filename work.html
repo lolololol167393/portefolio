@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Portefolio Laurent DUONG</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <link rel="stylesheet" href="assets/css/work.css">
+    <title>Projets - Laurent DUONG</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -18,23 +18,75 @@
             </div>
             <ul class="nav-links">
                <li><a href="index.html">Accueil</a></li>
-               <li><a href="work.html">Projet</a></li>
+               <li><a href="work.html" class="active">Projets</a></li>
                <li><a href="aPropos.html">A Propos</a></li>
                <li><a href="contact.html">Contact</a></li>
             </ul>
-            <a href="assets/docs/LaurentCV.pdf" download="CV_Laurent_DUONG.pdf" class="btn-cta">Mon CV</a>
+            <a href="assets/docs/LaurentCV.pdf" download class="btn-cta">Mon CV</a>
         </div>
     </nav>
 
-    <main>
-    <section class="hero">
-        <h1>Selected <span class="muted">Works.</span></h1>
-        <p>A showcase of my best design and development projects.</p>
-    </section>
-    <section class="project-grid">
+    <main class="container">
+        <section class="projects-hero">
+            <h1>Mes <span class="muted">Réalisations</span></h1>
+            <p>Découvrez les projets que j'ai réalisés en cours et en autonomie.</p>
         </section>
-</main>
 
-    <script src="/assets/js/script.js"></script>
+        <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i data-lucide="terminal"></i>
+                        <span class="project-tag">Programmation Bas Niveau</span>
+                    </div>
+                    <h3>Interpréteur de Code en C</h3>
+                    <p>Conception d'un interpréteur capable d'analyser et d'exécuter un jeu d'instructions spécifiques. Gestion de la mémoire vive, analyse lexicale et exécution logique.</p>
+                    <ul class="project-tech">
+                        <li>Langage C</li>
+                        <li>Algorithmique</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i data-lucide="globe"></i>
+                        <span class="project-tag">Application Métier</span>
+                    </div>
+                    <h3>Plateforme RH - Symfony</h3>
+                    <p>Développement d'une application de gestion de ressources humaines (congés, employés). Architecture MVC, sécurité (authentification) et base de données relationnelle.</p>
+                    <ul class="project-tech">
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>Symfony</li>
+                    </ul>
+                    <a href="https://laurentduong.alwaysdata.net/login" target="_blank" class="btn-project">Aller sur la page</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i data-lucide="layout"></i>
+                        <span class="project-tag">Front-end</span>
+                    </div>
+                    <h3>Portfolio Professionnel</h3>
+                    <p>Conception et développement de ce portfolio en utilisant des méthodes de design modernes et une structure optimisée.</p>
+                    <ul class="project-tech">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <a href="https://github.com/lolololol167393/portefolio" target="_blank" class="btn-project">Voir sur GitHub</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
