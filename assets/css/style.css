@@ -291,3 +291,16 @@ p { font-size: 18px; color: #4b5563; margin-bottom: 40px; }
     margin: 20px 0; 
     gap: 15px;
 }
+
+.btn-cta {
+    text-decoration: none; /* Enlève le soulignement */
+    display: inline-block; /* Permet de bien gérer les marges internes (padding) */
+    color: white;          /* Assure-toi que la couleur du texte est correcte */
+    /* Garde tes autres propriétés existantes (background, padding, border-radius, etc.) */
+}
+
+/* Optionnel : si tu veux changer l'apparence au survol */
+.btn-cta:hover {
+    text-decoration: none;
+    opacity: 0.9;
+}
